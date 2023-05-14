@@ -1004,7 +1004,8 @@ p {
     row-gap: 72px;
     column-gap: 24px;
     justify-content: start;
-    padding-left: 108px;
+
+    width: 584px;
   }
 }
 
@@ -1014,7 +1015,8 @@ p {
   .footer-container {
     gap: 0px;
     align-items: baseline;
-    padding-left: 15px;
+
+    width: 1158px;
   }
 }
 
@@ -1125,8 +1127,7 @@ p {
 
 .subscribe {
   max-width: 398px;
-  height: 136px;
-
+  width: 100%;
   text-align: center;
 }
 
@@ -1143,23 +1144,24 @@ p {
 
 .subscribe-form {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 16px;
   justify-content: center;
+  align-items: center;
 }
 
 /* Tablet styles & > */
 
 @media only screen and (min-width: 768px) {
   .subscribe-form {
-    flex-wrap: nowrap;
+    flex-direction: row;
     gap: 24px;
     width: 453px;
   }
 }
 
 .subscribe-form-input {
-  width: 100vw;
+  width: 100%;
   height: 40px;
 
   padding: 8px 16px;
@@ -1430,6 +1432,7 @@ p {
   position: relative;
   width: 16px;
   height: 16px;
+  flex-shrink: 0;
 }
 
 .modal-form-agreement-box {
@@ -1543,8 +1546,10 @@ p {
   width: 100vw;
   height: 100vh;
 
-  padding: 40px;
+  padding-top: 80px;
   padding-right: 35px;
+  padding-bottom: 40px;
+  padding-left: 40px;
   background-color: var(--primary-white-color);
   z-index: 999;
 
@@ -1569,8 +1574,6 @@ p {
   padding: 0px;
   gap: 40px;
 
-  margin: 0;
-  margin-top: 40px;
   margin-bottom: auto;
 }
 
